@@ -142,7 +142,7 @@ class Fieldsetplus_Field extends \Fuel\Core\Fieldset_Field
         if (is_array($build_field))
         {
             $label = $this->label ? $form->label($this->label) : '';
-            $template = $this->template ?: $form->get_config('multi_field_template', "\t\t<tr>\n\t\t\t<td class=\"{error_class}\">{group_label}{required}</td>\n\t\t\t<td class=\"{error_class}\">{fields}\n\t\t\t\t{field} {label}<br />\n{fields}\t\t\t{error_msg}\n\t\t\t</td>\n\t\t</tr>\n");
+            $template = $this->template ?: $form->get_config('group_multi_field_template', "{group_label} {fields} {field} {label}<br />\n{fields}<span>{description}</span>");
             if ($template && preg_match('#\{fields\}(.*)\{fields\}#Dus', $template, $match) > 0)
             {
                 $build_fields = '';
