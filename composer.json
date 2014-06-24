@@ -1,0 +1,6 @@
+{
+    "name" : "itcom/Fieldsetplus",
+	"type": "library",
+	"license": "MIT",
+	"description": "FuelPHP Fieldset"
+}
