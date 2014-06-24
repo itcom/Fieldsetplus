@@ -1,6 +1,9 @@
 {
     "name" : "itcom/Fieldsetplus",
-	"type": "library",
+	"type": "fuel-package",
 	"license": "MIT",
+    "require": {
+		"composer/installers" : "*"
+	},
 	"description": "FuelPHP Fieldset"
 }
